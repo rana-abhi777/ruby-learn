@@ -25,3 +25,12 @@ adjusted_scores = scores.map do |k,v|
 end
 puts "original scores: #{scores}"
 puts "adjusted scores are : #{adjusted_scores}"
+
+
+# using ! with map
+fruits = ['apple','banana','pear']
+puts "Original fruits array: #{fruits}"
+fruits.map! do |fruit|
+  fruit.upcase
+end
+puts "Updats fruits array: #{fruits}"
